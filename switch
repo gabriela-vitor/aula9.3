@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main(){
+	double areacir, areaqua, areatri, raio, ladoqua, basetri, alturatri;
+	int formas; 
+	
+	printf("escolha uma forma \n1-circulo \n2-quadrado \n3-triangulo\n");
+	scanf("%d", &formas);
+	
+	switch(formas){
+		
+		case 1:
+			printf(" considere o pi como (3,14), de o raio do circulo\n");
+			scanf("%lf", &raio );
+			areacir = 3.14 * pow(raio, 2);
+			printf("a area do circulo e %.2lf", areacir);
+			break;
+			
+		case 2:
+			printf("digite o comprimento dos lados do quadrado\n");
+			scanf("%lf", &ladoqua);
+			areaqua = pow(ladoqua , 2);
+			printf("a area do quadrado e %.2lf", areaqua);
+			
+		case 3:
+			printf("digite a base e a altura do triangulo\n");
+			scanf("%lf %lf", &basetri ,  &alturatri );
+			areatri = (basetri * alturatri) / 2;
+			printf("a area do triangulo e %.2lf", areatri);
+		
+		
+		
+	}
+}
